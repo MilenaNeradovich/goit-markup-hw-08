@@ -502,6 +502,7 @@ fill: var(--accent-color);
 
 .footer-contacts{
   margin-right: 70px;
+  flex-grow: 1;
 }
 
 .link.link-street {
@@ -598,6 +599,10 @@ background-color: var(--accent-color);
   display: flex;
   box-sizing: border-box;
   color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
   border: 0;
@@ -792,6 +797,15 @@ header{
   background-color: #ffffff;
 
   cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:focus,
+.modal-close:hover{
+  fill: var(--accent-color);
 }
 
 .is-hidden{
@@ -831,7 +845,15 @@ header{
 }
 
 .input-field{
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+}
+
+.input-field-textarea{
+  margin-bottom: 20px;
+}
+
+.input-field-checkbox{
+  margin-bottom: 30px;
 }
 
 .input-title{
@@ -845,6 +867,7 @@ header{
 }
 
 .form-textarea{
+  display: block;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -891,8 +914,6 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 6px;
 }
 .check-text span{
   width: 16px;
@@ -941,3 +962,4 @@ header{
   color: var(--white-color);
   cursor: pointer;
 }
+
