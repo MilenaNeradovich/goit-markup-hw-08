@@ -1,0 +1,37 @@
+.benefits__svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.benefits__list{
+      display: flex;
+}
+    
+.benefits__item{
+      margin-right: 30px;
+      width: 270px;
+
+      &:last-child{
+      margin-right: 0;
+    }
+}
+    
+.benefits__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+}
+    
+.benefits__description {
+      color: var(--second-color-text);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+}
