@@ -46,7 +46,18 @@
                         +38 096 111 11 11
                     </a>
                 </li>
-            </ul>                       
+            </ul>  
+            
+            <button 
+            class="menu-btn js-open-menu"
+            type="button" 
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/symbol-defs.svg#menu-btn"></use>
+                </svg>
+            </button>
+
         </div>
     </header>
     <main>
@@ -74,7 +85,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/technokrjak.jpg" alt="Технокряк - Веб-сайт" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x.webp   1x,
+                                            ./images/works/img_lg@2x.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x.jpg    1x,
+                                            ./images/works/img_lg@2x.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x.webp    1x,
+                                            ./images/works/img_md@2x.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x.jpg    1x,
+                                            ./images/works/img_md@2x.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x.webp    1x,
+                                            ./images/works/img_sm@2x.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x.jpg    1x,
+                                            ./images/works/img_sm@2x.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x.jpg" alt="Технокряк - Веб-сайт" >
+                                    </picture>
                                     <p class="work-about"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -86,7 +150,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star - Дизайн" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-1.webp   1x,
+                                            ./images/works/img_lg@2x-1.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-1.jpg    1x,
+                                            ./images/works/img_lg@2x-1.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-1.webp    1x,
+                                            ./images/works/img_md@2x-1.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-1.jpg    1x,
+                                            ./images/works/img_md@2x-1.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-1.webp    1x,
+                                            ./images/works/img_sm@2x-1.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-1.jpg    1x,
+                                            ./images/works/img_sm@2x-1.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-1.jpg" alt="Постер New Orlean vs Golden Star - Дизайн">
+                                    </picture>
                                     <p class="work-about"> Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -98,7 +215,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/restaurant.jpg" alt="Ресторан Seafood - Приложение" width="370">                                                       
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-2.webp   1x,
+                                            ./images/works/img_lg@2x-2.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-2.jpg    1x,
+                                            ./images/works/img_lg@2x-2.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-2.webp    1x,
+                                            ./images/works/img_md@2x-2.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-2.jpg    1x,
+                                            ./images/works/img_md@2x-2.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-2.webp    1x,
+                                            ./images/works/img_sm@2x-2.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-2.jpg    1x,
+                                            ./images/works/img_sm@2x-2.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-2.jpg" alt="Ресторан Seafood - Приложение"> 
+                                    </picture>                                                      
                                     <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -110,7 +280,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/prime.jpg" alt="Проект Prime -  Маркетинг" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-3.webp   1x,
+                                            ./images/works/img_lg@2x-3.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-3.jpg    1x,
+                                            ./images/works/img_lg@2x-3.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-3.webp    1x,
+                                            ./images/works/img_md@2x-3.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-3.jpg    1x,
+                                            ./images/works/img_md@2x-3.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-3.webp    1x,
+                                            ./images/works/img_sm@2x-3.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-3.jpg    1x,
+                                            ./images/works/img_sm@2x-3.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-3.jpg" alt="Проект Prime -  Маркетинг" >
+                                    </picture>
                                     <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -122,7 +345,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/boxes.jpg" alt="Проект Boxes - Приложение" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-4.webp   1x,
+                                            ./images/works/img_lg@2x-4.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-4.jpg    1x,
+                                            ./images/works/img_lg@2x-4.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-4.webp    1x,
+                                            ./images/works/img_md@2x-4.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-4.jpg    1x,
+                                            ./images/works/img_md@2x-4.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-4.webp    1x,
+                                            ./images/works/img_sm@2x-4.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-4.jpg    1x,
+                                            ./images/works/img_sm@2x-4.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-4.jpg " alt="Проект Boxes - Приложение">
+                                    </picture>
                                     <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -134,7 +410,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                             <div class="container-work-about">
-                                <img src="./images/inspiration.jpg" alt="Inspiration has no Borders - Веб-сайт" width="370">
+                                <picture>
+                                    <!-- Desktop screen -->
+                                    <source
+                                      media="(min-width: 1200px)"
+                                      srcset="
+                                        ./images/works/img_lg@1x-5.webp   1x,
+                                        ./images/works/img_lg@2x-5.webp 2x
+                                      "
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      media="(min-width: 1200px)"
+                                      srcset="
+                                        ./images/works/img_lg@1x-5.jpg    1x,
+                                        ./images/works/img_lg@2x-5.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                                    <!-- Tablet screen -->
+                                    <source
+                                      media="(min-width: 768px)"
+                                      srcset="
+                                        ./images/works/img_md@1x-5.webp    1x,
+                                        ./images/works/img_md@2x-5.webp 2x
+                                      "
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      media="(min-width: 768px)"
+                                      srcset="
+                                        ./images/works/img_md@1x-5.jpg    1x,
+                                        ./images/works/img_md@2x-5.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                                    <!-- Mobile screen -->
+                                    <source
+                                      media="(max-width: 767px)"
+                                      srcset="
+                                        ./images/works/img_sm@1x-5.webp    1x,
+                                        ./images/works/img_sm@2x-5.webp 2x
+                                      "
+                                      type="image/webp"
+                                    />
+                                    <source
+                                      media="(max-width: 767px)"
+                                      srcset="
+                                        ./images/works/img_sm@1x-5.jpg    1x,
+                                        ./images/works/img_sm@2x-5.jpg 2x
+                                      "
+                                      type="image/jpg"
+                                    />
+                                    <img src="./images/works/img_lg@1x-5.jpg" alt="Inspiration has no Borders - Веб-сайт">
+                                </picture>
                                 <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                             </div>
                             <div class="work-description">
@@ -146,7 +475,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/edition.jpg" alt="Издание Limited Edition - Дизайн" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-6.webp   1x,
+                                            ./images/works/img_lg@2x-6.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-6.jpg    1x,
+                                            ./images/works/img_lg@2x-6.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-6.webp    1x,
+                                            ./images/works/img_md@2x-6.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-6.jpg    1x,
+                                            ./images/works/img_md@2x-6.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-6.webp    1x,
+                                            ./images/works/img_sm@2x-6.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-6.jpg    1x,
+                                            ./images/works/img_sm@2x-6.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-6.jpg" alt="Издание Limited Edition - Дизайн">
+                                    </picture>
                                     <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -156,9 +538,62 @@
                             </a>
                         </li>
                         <li class="work-item">
-                            <a class="link-works" href="#">
+                            <a class="link-works" href="#" >
                                 <div class="container-work-about">
-                                    <img src="./images/LAB.jpg" alt="Проект LAB - Маркетинг" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-7.webp   1x,
+                                            ./images/works/img_lg@2x-7.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-7.jpg    1x,
+                                            ./images/works/img_lg@2x-7.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-7.webp    1x,
+                                            ./images/works/img_md@2x-7.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-7.jpg    1x,
+                                            ./images/works/img_md@2x-7.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-7.webp    1x,
+                                            ./images/works/img_sm@2x-7.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-7.jpg    1x,
+                                            ./images/works/img_sm@2x-7.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-7.jpg" alt="Проект LAB - Маркетинг">
+                                    </picture>
                                     <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -170,7 +605,60 @@
                         <li class="work-item">
                             <a class="link-works" href="#">
                                 <div class="container-work-about">
-                                    <img src="./images/growing.jpg" alt="Growing Business - Приложение" width="370">
+                                    <picture>
+                                        <!-- Desktop screen -->
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-8.webp   1x,
+                                            ./images/works/img_lg@2x-8.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 1200px)"
+                                          srcset="
+                                            ./images/works/img_lg@1x-8.jpg    1x,
+                                            ./images/works/img_lg@2x-8.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Tablet screen -->
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-8.webp    1x,
+                                            ./images/works/img_md@2x-8.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(min-width: 768px)"
+                                          srcset="
+                                            ./images/works/img_md@1x-8.jpg    1x,
+                                            ./images/works/img_md@2x-8.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <!-- Mobile screen -->
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-8.webp    1x,
+                                            ./images/works/img_sm@2x-8.webp 2x
+                                          "
+                                          type="image/webp"
+                                        />
+                                        <source
+                                          media="(max-width: 767px)"
+                                          srcset="
+                                            ./images/works/img_sm@1x-8.jpg    1x,
+                                            ./images/works/img_sm@2x-8.jpg 2x
+                                          "
+                                          type="image/jpg"
+                                        />
+                                        <img src="./images/works/img_lg@1x-8.jpg" alt="Growing Business - Приложение">
+                                    </picture>
                                     <p class="work-about">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице </p>
                                 </div>
                                 <div class="work-description">
@@ -185,8 +673,8 @@
     </main>
     
     <footer class="footer">
-        <div class="container">
-            <div class=" footer-contacts">
+        <div class="footer-container container">
+            <div class="footer-contacts">
                 <a href="#" class="logo-footer">Web<span class="logo-studio">Studio</span></a>
                 <address class="address-footer">
                     <ul class="list">
@@ -206,48 +694,102 @@
             <p class="join-title"> ПРИСОЕДИНЯЙТЕСЬ </p>
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
-                        <a class="footer-social-link" href aria-label="Instagram">
+                        <a class="footer-social-link" href="" aria-label="Instagram">
                             <svg class="footer-sociL-svg" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-instagram">..</use>
+                                <use href="images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="footer-social-link" href aria-label="Twitter">
+                        <a class="footer-social-link" href="" aria-label="Twitter">
                             <svg class="footer-sociL-svg" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-twitter">..</use>
+                                <use href="images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="footer-social-link" href aria-label="Facebook">
+                        <a class="footer-social-link" href="" aria-label="Facebook">
                             <svg class="footer-sociL-svg" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-facebook">..</use>
+                                <use href="images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="footer-social-link" href aria-label="Linkedin">
+                        <a class="footer-social-link" href="" aria-label="Linkedin">
                             <svg class="footer-social-svg" width="20" height="20">
-                                <use href="images/symbol-defs.svg#icon-linkedin">..</use>
+                                <use href="images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
-            </h2>
             </div>
             <div class="join-us">
                 <p class="join-title"> ПОДПИШИТЕСЬ НА РАССЫЛКУ </p>
                     <form class="subscribe">
-                        <input class="join-form-email" type="text" name="join-form-email" placeholder="E-mail">
-                        <button class="button-join-us" type="submit">Подписаться
-                            <svg class="symbol-letter" width="24" height="24">
-                                <use href="images/symbol-defs.svg#icon-icon-send"></use>
-                            </svg>
-                        </button>
+                        <div class="subscribe-box">
+                            <input class="join-form-email" type="text" name="join-form-email" placeholder="E-mail">
+                            <button class="button-join-us" type="submit">
+                                Подписаться
+                                <svg class="symbol-letter" width="24" height="24">
+                                    <use href="images/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </form>
             </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+         <svg width="40" height="40">
+             <use href="./images/symbol-defs.svg#menu-close"></use>
+         </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link menu-current">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link-tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__link-email">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+                <a href="instagram.com" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="twitter.com" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="facebook.com" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="linkendin.com" class="mobile-social__link">Linkedin</a>
+            </li>
+        </ul>
+    </div>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
 </body>
 </html>
